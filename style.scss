@@ -1,0 +1,79 @@
+$primary-color: black;
+$accent-color: rgb(207, 136, 3);
+$text-color: white;
+$font-size: 15px;
+$padding: 20px;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    @include flex-center();
+    justify-content: space-between;
+    background-color: $primary-color;
+    padding: $padding 40px;
+
+    .logo {
+        color: $accent-color;
+        font-size: 24px;
+        font-weight: bold;
+
+      
+        }
+          nav {
+            ul {
+                @include flex-center();
+                gap: 24px;
+                list-style: none;
+
+                li {
+                    a {
+                        color: $text-color;
+                        text-decoration: none;
+                        font-size: $font-size;
+                        &:hover {
+                            color: $accent-color;
+                        }
+                    }
+                }
+            }
+
+        .join-btn {
+            border: none;
+            background-color: $accent-color;
+            color: $text-color;
+            padding: 12px $padding;
+            border-radius: 15px;
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(85, 3, 3);
+            }
+        }
+    }
+    input{
+        height: 25px;
+        width: 150px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+
+.main {
+    background-color: $accent-color;
+    color: $text-color;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    button {
+        background-color: $primary-color;
+        color: $text-color;
+        border-radius: 5px;
+        border: none;
+        height: 30px;
+        width: 100px;
+        cursor: pointer;
+    }
+}

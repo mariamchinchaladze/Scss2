@@ -1,0 +1,63 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px 40px;
+}
+.header .logo {
+  color: rgb(207, 136, 3);
+  font-size: 24px;
+  font-weight: bold;
+}
+.header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+}
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+.header nav ul li a:hover {
+  color: rgb(207, 136, 3);
+}
+.header nav .join-btn {
+  border: none;
+  background-color: rgb(207, 136, 3);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.header nav .join-btn:hover {
+  background-color: rgb(85, 3, 3);
+}
+.header input {
+  height: 25px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+}
+
+.main {
+  background-color: rgb(207, 136, 3);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+.main button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
